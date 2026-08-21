@@ -121,9 +121,19 @@ export default function App() {
             AI Health Assistant
           </h1>
         </div>
-        <p className="text-purple-500 text-sm mb-8">
+        <p className="text-purple-500 text-sm mb-6">
           Voice-based intake & preliminary health screening
         </p>
+
+        {/* How to begin instructions */}
+        <div className="text-left bg-purple-50/50 p-5 rounded-2xl mb-8 border border-purple-100/50 shadow-inner">
+          <h3 className="text-purple-800 font-semibold mb-3">How to begin:</h3>
+          <ul className="text-sm text-purple-700 space-y-3">
+            <li className="flex items-center gap-3"><span className="w-6 h-6 shrink-0 rounded-full bg-purple-200 text-purple-800 flex items-center justify-center text-xs font-bold shadow-sm">1</span> Click 'Start Screening Call'</li>
+            <li className="flex items-center gap-3"><span className="w-6 h-6 shrink-0 rounded-full bg-purple-200 text-purple-800 flex items-center justify-center text-xs font-bold shadow-sm">2</span> Allow microphone access when prompted</li>
+            <li className="flex items-center gap-3"><span className="w-6 h-6 shrink-0 rounded-full bg-purple-200 text-purple-800 flex items-center justify-center text-xs font-bold shadow-sm">3</span> Speak naturally about your symptoms</li>
+          </ul>
+        </div>
 
         {/* Call Controls & Status */}
         <div className="flex flex-col items-center justify-center mb-8">
